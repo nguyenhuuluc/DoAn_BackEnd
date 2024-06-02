@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.specialist-group h2 {
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.specialist-group-middle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.specialist-group-middle a {
+    text-decoration: none;
+    border: 1px dashed  black;
+    padding: 15px 15px 15px 15px;
+    border-radius: 10px;
+    color: black;
+}

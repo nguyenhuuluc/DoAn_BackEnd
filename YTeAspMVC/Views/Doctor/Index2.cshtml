@@ -1,0 +1,216 @@
+﻿
+@{
+    ViewBag.Title = "Index2";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="breadcrumb-area" style="background-image: url(/Content/images//resources/breadcrumb-bg.jpg);">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="inner-content clearfix">
+                    <div class="title float-left">
+                        <h2>Danh sách bác sĩ</h2>
+                    </div>
+                    <div class="breadcrumb-menu float-right">
+                        <ul class="clearfix">
+                            <li><a href="/Home/Index">Trang chủ</a></li>
+                            <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                            <li class="active">Bác sĩ</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@if (ViewBag.Msg == "1")
+{
+
+    <div class="toast" data-delay="1000" style="position:fixed; top: 100PX; left: 10PX;z-index: 2000;width: 300px">
+        <script>
+            swal({
+                title: 'Đặt lịch thành công',
+                /* text: 'Redirecting...', */
+                icon: 'success',
+                timer: 3000,
+                buttons: true,
+                type: 'success'
+            })
+        </script>
+    </div>
+}
+@if (ViewBag.Msg == "2")
+{
+
+    <div class="toast" data-delay="1000" style="position:fixed; top: 100PX; left: 10PX;z-index: 2000;width: 300px">
+        <script>
+            swal({
+                title: 'Đặt lịch không thành công',
+                /* text: 'Redirecting...', */
+                icon: 'error',
+                timer: 3000,
+                buttons: true,
+                type: 'error'
+            })
+        </script>
+    </div>
+}
+
+<section class="doctor-area">
+    <div class="container">
+
+        @foreach (var Doctor in ViewBag.Doctors)
+        {
+
+            <form class="appoinment-form" action="/Booking/Add" method="post">
+                <div class="row row-border mt-5">
+                    <div class="col-xl-6">
+                        <div class="doctor-content">
+                            <!--Start Single doctor item-->
+                            <div class="single-doctor-item wow fadeInUp" data-wow-delay="300ms">
+                                <div class="row">
+                                    <div class="col-xl-5">
+                                        <div class="img-holder">
+                                            <img src="~/Content/images/@Doctor.Image" alt="Awesome Image">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-7">
+                                        <div class="text-holder">
+                                            <input type="text" name="IdDoctor" value="@Doctor.IdDoctor" hidden />
+
+                                            <h3>@Doctor.FullName</h3>
+                                            <div class="content">
+                                                @Html.Raw(Doctor.Describe)
+                                            </div>
+
+                                            <ul class="doctor_email">
+                                                <li><span class="flaticon-e-mail-envelope"></span>@Doctor.Email</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    @{ var userInfomatiom = (YTeAspMVC.Models.User)Session["USER"]; }
+
+                    @if (userInfomatiom == null)
+                    {
+                        <div class="col-xl-6">
+                            <div class="title_info">
+                                <h6>Đăng nhập để xem thêm thông tin</h6>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="col-xl-6">
+                            <div class="schedules mt-2">
+                                <p>Lịch Khám</p>
+                                <select name="Day" onchange="ChangesDate(@Doctor.IdDoctor)" id="schedules">
+                                    @foreach (var schedule in Doctor.Schedules)
+                                    {
+                                        <option value="@schedule.Date">@schedule.Date</option>
+                                    }
+                                </select>
+                            </div>
+
+                            <ul id="TimeStr-@Doctor.IdDoctor">
+                                @foreach (var schedule in Doctor.Schedules)
+                                {
+                                    <li name="Time" onclick="OnInput(@Doctor.IdDoctor)" id="click_time-@Doctor.IdDoctor">
+                                        <a name="Time">@schedule.Timetype</a>
+                                        <input id="inputDoctor-@Doctor.IdDoctor" type="hidden" name="@Doctor.IdDoctor" value="@Doctor.IdDoctor" />
+                                        <input type="hidden" name="Time" value="@schedule.Timetype" />
+                                        <input type="hidden" name="IdSchedules" value="@schedule.IdSchedules" />
+                                    </li>
+                                }
+                            </ul>
+                            <div id="on_reason-@Doctor.IdDoctor" class="reason mt-1">
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Lý do khám bệnh:</label>
+                                    <textarea name="Reason" class="form-control mt-2" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <button onclick="DeleteSchedules()" class="mt-2 mb-2 btn btn-primary">Đặt lịch</button>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </form>
+        }
+    </div>
+
+    <script>
+        function ChangesDate(id) {
+            //var id = $('input[name="idDoctor"]').val();
+            var date = $('#schedules').val();
+
+            var data1 = {
+                id: id,
+                date: date
+            }
+            $.ajax({
+                type: "POST",
+                contentType: "application/json",
+                url: "/Doctor/ChangesDate",
+                data: JSON.stringify(data1),
+                dataType: 'json',
+                cache: false,
+                success: function (t) {
+                    console.log(t);
+                    if (t && t?.length > 0) {
+                        var html = '';
+                        for (var i = 0; i < t.length; i++) {
+                            html += `<li onclick="OnInput(${t[i].IdDoctor})">
+                                                <a>${t[i].Timetype}</a>
+                                                <input id="inputDoctor-${t[i].IdDoctor}" type="hidden" name="${t[i].IdDoctor}" value="${t[i].IdDoctor}" />
+                                                <input type="hidden" name="Time" value="${t[i].Timetype}" />
+                                                <input type="hidden" name="IdSchedules" value="${t[i].IdSchedules}" />
+                                                </li>`;
+                            $("#TimeStr-" + id).html(html);
+                        }
+                    }
+                    else {
+                        alert(t)
+                    }
+                },
+                error: function (e) {
+                    console.error(e)
+                }
+            });
+        }
+
+        function OnInput(id) {
+            var idDct = $("#inputDoctor-" + id).val();
+            console.log(idDct);
+            console.log(id);
+            if (id == idDct) {
+                if ($("#on_reason-" + id).is(":visible")) {
+                    $("#on_reason-" + id).hide();
+                } else {
+                    $("#on_reason-" + id).show();
+                }
+            }
+        }
+        function DeleteSchedules() {
+            var id = $('input[name="IdSchedules"]').val();
+            console.log(id);
+            $.ajax({
+                type: "GET",
+                url: `/Doctor/Delete/${id}`,
+                dataType: "json",
+                cache: false,
+                success: function (t) {
+                    console.log(t);
+                },
+                error: function (e) {
+                    console.error(e)
+                }
+            })
+        }
+    </script>
+
+</section>
+

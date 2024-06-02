@@ -1,0 +1,166 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<section class="clinic-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 clinic-title">
+                    <h2>Cơ sở y tế</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row mt-5 mb-3">
+                <ul class="clinic-mid">
+                    @foreach(var clinic in ViewBag.GetList)
+                    {
+                        <a href="">
+                            <div>
+                                <img src="~/Content/images/clinic/@clinic.Image" alt="">
+                            </div>
+                            <span>@clinic.NameClinic</span>
+                        </a>
+                    }
+                </ul>
+            </div>
+        </div>
+    </section>*@
+
+<section class="clinic-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 clinic-title">
+                <h2>Cơ sở y tế</h2>
+            </div>
+            <div class="col-xl-6 clinic-choose">
+                <div id="on-province" class="province">
+                    <p id="selected-province">Tỉnh thành</p>
+                    <div class="svg">
+                        <svg width="16" height="16" fill="#000" class="chevron-down_svg__bi chevron-down_svg__bi-chevron-down" preserveAspectRatio="none" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"></path></svg>
+                    </div>
+                </div>
+                <div id="on_reason" class="province-child">
+                    <div class="option-parent">
+                        <p>Lựa chọn tỉnh thành</p>
+                        <div class="option">
+                            <div class="province-option" data-province="Hà Nội">
+                                <p>Hà Nội</p>
+                            </div>
+                            <div class="province-option" data-province="TP. Hồ Chí Minh">
+                                <p>TP. Hồ Chí Minh</p>
+                            </div>
+                        </div>
+                        <div class="option-bottom">
+                            <div class="option-svg">
+                                <svg fill="#d2d2d2" xmlns="http://www.w3.org/2000/svg" width="25" height="25" preserveAspectRatio="none" viewBox="0 0 50 50" style="margin-right: 10px;">
+                                    <path d="M25 5C13.965 5 5 13.965 5 25c-.004.36.184.695.496.879.313.18.695.18 1.008 0 .312-.184.5-.52.496-.879 0-9.953 8.047-18 18-18 6.246 0 11.727 3.18 14.957 8H33a1.006 1.006 0 0 0-.879.496 1.01 1.01 0 0 0 0 1.008c.184.312.52.5.879.496h10V7a1.003 1.003 0 0 0-1.016-1.016c-.55.012-.992.465-.984 1.016v6.012C37.348 8.148 31.54 5 25 5m18.984 18.984c-.55.012-.992.465-.984 1.016 0 9.953-8.047 18-18 18-6.246 0-11.73-3.18-14.957-8H17c.36.008.695-.184.879-.492.18-.313.18-.7 0-1.012-.184-.309-.52-.5-.879-.496H8.445a1.072 1.072 0 0 0-.386 0H7v10c-.004.36.184.695.496.879.313.18.695.18 1.008 0 .312-.184.5-.52.496-.879v-6.016C12.648 41.848 18.46 45 25 45c11.035 0 20-8.965 20-20a1.003 1.003 0 0 0-1.016-1.016"></path>
+                                </svg>
+                                <p>Đặt lại</p>
+                            </div>
+                            <div class="option-apply">
+                                <p>Áp dụng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line-bottom"></div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row mb-5">
+            <ul class="clinic-mid">
+                @foreach (var clinic in ViewBag.GetList)
+                {
+                    <a class="clinic-item" data-province="@clinic.CityAddress"  href="">
+                        <div class="mt-3">
+                            <img src="~/Content/images/clinic/@clinic.Image" alt="">
+                        </div>
+                        <span>@clinic.NameClinic</span>
+                        <input type="hidden" name="@clinic.CityAddress" value="@clinic.CityAddress" />
+
+                    </a>
+                }
+            </ul>
+        </div>
+    </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+
+    $(document).ready(function () {
+        $("#on-province").click(function (event) {
+            event.stopPropagation();
+            $("#on_reason").toggle();
+        }); 
+     
+        $(document).click(function (event) {
+            if (!$(event.target).closest('#on_reason, #on-province').length) {
+                $("#on_reason").hide();
+            }
+        });
+
+        const options = $(".province-option");
+        const selectedProvinceElement = $("#selected-province");
+        const resetButton = $(".option-svg");
+        const applyButton = $(".option-apply");
+
+        function resetState() {
+            options.removeClass("activep").find("p").css({
+                backgroundColor: "rgb(235, 235, 235)",
+                color: "black"
+            });
+            selectedProvinceElement.text("Tỉnh thành");
+            resetButton.removeClass("activep");
+            applyButton.removeClass("activep");
+            $(".clinic-item").show();
+        }
+
+        options.click(function () {
+            const province = $(this).data("province");
+
+            if ($(this).hasClass("activep")) {
+                resetState();
+            } else {
+                options.removeClass("activep").find("p").css({
+                    backgroundColor: "rgb(235, 235, 235)",
+                    color: "black"
+                });
+                $(this).addClass("activep").find("p").css({
+                    backgroundColor: "rgb(68 190 226)",
+                    color: "white"
+                });
+                selectedProvinceElement.text(province);
+                resetButton.addClass("activep");
+                applyButton.addClass("activep");
+            }
+        });
+
+        resetButton.click(function () {
+            resetState();
+        });
+
+        applyButton.click(function () {
+            if (!applyButton.hasClass("activep")) return;
+
+            const selectedProvince = selectedProvinceElement.text();
+            $(".clinic-item").each(function () {
+                const clinicProvince = $(this).data("province");
+                if (clinicProvince === selectedProvince || selectedProvince === "Tỉnh thành") {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            });
+        });
+    });
+</script>

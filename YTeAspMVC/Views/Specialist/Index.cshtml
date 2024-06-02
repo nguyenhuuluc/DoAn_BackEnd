@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="breadcrumb-area" style="background-image: url(/Content/images//resources/breadcrumb-bg.jpg);">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="inner-content clearfix">
+                    <div class="title float-left">
+                        <h2>Chuyên Khoa</h2>
+                    </div>
+                    <div class="breadcrumb-menu float-right">
+                        <ul class="clearfix">
+                            <li><a href="/Home/Index">Trang chủ</a></li>
+                            <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                            <li class="active">Chuyên khoa</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row mb-5">
+            @foreach (var spe in ViewBag.Specialist)
+            {
+                <div class="col-xl-3 mt-5">
+                    <a class="specialize" href="/Specialist/Detail/@spe.IdSpecialist">
+                        <img src="~/Content/images/Specialist/@spe.Image" />
+                        <span>@spe.NameSpecialist</span>
+                    </a>
+                </div>
+             }
+        </div>
+    </div>
+</section>

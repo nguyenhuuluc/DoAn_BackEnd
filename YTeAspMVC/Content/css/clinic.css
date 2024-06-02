@@ -1,0 +1,302 @@
+﻿/** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section.clinic-top {
+    margin-top: 5rem;
+}
+
+    section.clinic-top .container {
+        padding-bottom: 1rem;
+        border-bottom: 2px solid #dee2e6;
+        z-index: 0;
+    }
+
+    section.clinic-top .clinic-choose {
+        position: relative;
+    }
+
+    section.clinic-top .province {
+        width: 35%;
+        border: 2px solid #dee2e6;
+        display: flex;
+        border-radius: 10px;
+    }
+
+        section.clinic-top .province p {
+            margin-bottom: 0px;
+            padding: 6px 0 6px 12px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        section.clinic-top .province .svg {
+            padding: 7px 0 5px 64px;
+            color: black;
+        }
+
+    section.clinic-top .province-child {
+        border: 2px solid black;
+        height: 500px;
+        z-index: 1;
+        width: 75%;
+        border-radius: 5px;
+    }
+
+        section.clinic-top .province-child p {
+            padding-left: 1rem;
+            padding-top: 0.5rem;
+            font-weight: 500;
+        }
+
+        section.clinic-top .province-child .option {
+            display: flex;
+            justify-content: space-around;
+        }
+
+            section.clinic-top .province-child .option div {
+                width: 50%;
+            }
+
+            section.clinic-top .province-child .option p {
+                background-color: rgb(235, 235, 235);
+                padding: 10px;
+                border-radius: 10px;
+                text-align: center;
+            }
+
+.row .clinic-mid {
+    display: flex;
+    flex-flow: wrap;
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 100%;
+    border-top-width: 2px;
+    border-color: rgb(231, 229, 229);
+    padding-top: 25px;
+}
+
+    .row .clinic-mid a {
+        margin-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        width: 24%;
+        text-decoration: none;
+    }
+
+        .row .clinic-mid a div {
+            display: flex;
+            aspect-ratio: 1.77778 / 1;
+            border-width: 2px;
+            border-radius: 5px;
+            border-color: rgb(213, 213, 213);
+            background-color: rgb(255, 255, 255);
+            padding: 15px;
+            border: 2px solid #dee2e6;
+        }
+
+        .row .clinic-mid a div {
+            display: flex;
+            justify-content: center;
+        }
+
+        .row .clinic-mid a span {
+            font-size: 16px;
+            color: rgb(40, 49, 63);
+            padding-top: 10px;
+            font-weight: 600;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section.clinic-top {
+    margin-top: 2.5rem;
+}
+
+    section.clinic-top .container {
+        padding-bottom: 1rem;
+    }
+
+        section.clinic-top .container .row .line-bottom {
+            border-bottom: 2px solid #dee2e6;
+            margin-top: 1.75rem;
+            /* position: absolute; */
+            z-index: 1;
+            width: 100%;
+            /* top:150px; */
+        }
+
+    section.clinic-top .clinic-choose {
+        position: relative;
+    }
+
+    section.clinic-top .province {
+        width: 45%;
+        border: 2px solid #dee2e6;
+        display: flex;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+        section.clinic-top .province p {
+            width: 70%;
+            margin-bottom: 0px;
+            padding: 6px 0 6px 12px;
+            font-size: 18px;
+            font-weight: 500;
+            color: black;
+        }
+
+        section.clinic-top .province .svg {
+            padding: 7px 0 5px 48px;
+            color: black;
+        }
+
+    section.clinic-top .province-child {
+        border: 2px solid #dee2e6;
+        height: 200px;
+        position: absolute;
+        z-index: 2;
+        width: 75%;
+        border-radius: 5px;
+        margin-top: 0.5rem;
+        display: none;
+        background-color: #fff;
+    }
+
+        section.clinic-top .province-child p {
+            padding-left: 1rem;
+            padding-top: 0.5rem;
+            font-weight: 500;
+            color: black;
+        }
+
+        section.clinic-top .province-child .option {
+            display: flex;
+            justify-content: space-around;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+            section.clinic-top .province-child .option div {
+                width: 50%;
+                margin-left: 10px;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+
+            section.clinic-top .province-child .option p {
+                background-color: rgb(235, 235, 235);
+                padding: 10px;
+                border-radius: 10px;
+                text-align: center;
+            }
+
+        section.clinic-top .province-child .option-bottom {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 1.5rem;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+            section.clinic-top .province-child .option-bottom div {
+                width: 50%;
+                margin-left: 10px;
+                margin-right: 10px;
+                height: 36px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+
+                section.clinic-top .province-child .option-bottom div.option-svg p {
+                    color: rgb(210, 210, 210);
+                }
+
+                section.clinic-top .province-child .option-bottom div.option-svg svg {
+                    margin-right: 0 !important;
+                }
+
+                section.clinic-top .province-child .option-bottom div p {
+                    margin-bottom: 0;
+                    padding-left: 0 !important;
+                    padding-top: 0 !important;
+                    text-align: center;
+                }
+
+            section.clinic-top .province-child .option-bottom .option-svg.activep p {
+                color: black;
+            }
+
+            section.clinic-top .province-child .option-bottom .option-svg.activep svg {
+                fill: black;
+            }
+
+            section.clinic-top .province-child .option-bottom .option-apply.activep {
+                background-color: rgb(255, 193, 16);
+            }
+
+            section.clinic-top .province-child .option-bottom .option-apply {
+                background-color: rgb(210, 210, 210);
+                color: rgb(255, 255, 255);
+            }
+
+.row .clinic-mid {
+    display: flex;
+    flex-flow: wrap;
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 100%;
+    border-top-width: 2px;
+    border-color: rgb(231, 229, 229);
+    padding-top: 10px;
+}
+
+    .row .clinic-mid a {
+        margin-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        width: 24%;
+        text-decoration: none;
+    }
+
+        .row .clinic-mid a div {
+            display: flex;
+            aspect-ratio: 1.77778 / 1;
+            border-width: 2px;
+            border-radius: 5px;
+            border-color: rgb(213, 213, 213);
+            background-color: rgb(255, 255, 255);
+            padding: 15px;
+            border: 2px solid #dee2e6;
+        }
+
+        .row .clinic-mid a div {
+            display: flex;
+            justify-content: center;
+        }
+
+        .row .clinic-mid a span {
+            font-size: 16px;
+            color: rgb(40, 49, 63);
+            padding-top: 10px;
+            font-weight: 600;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }

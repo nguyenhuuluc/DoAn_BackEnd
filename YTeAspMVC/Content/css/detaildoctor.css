@@ -1,0 +1,135 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.doctor-content .single-doctor-item {
+    display: flex;
+    /* justify-content: space-between; */
+}
+.single-doctor-item {
+    position: relative;
+    display: block;
+    padding-bottom: 40px;
+     margin-bottom: 0px!important; 
+}
+.single-doctor-item.last-child {
+    border: none;
+    margin: 0;
+    padding: 0;
+}    
+.single-doctor-item .img-holder {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}    
+.single-doctor-item .img-holder img {
+    width: 100%;
+    transition: all 0.3s ease-in-out 0.3s;
+}
+.single-doctor-item .text-holder {
+    padding-left: 3rem;
+    padding-top: 0.75rem;
+}
+.single-doctor-item .text-holder h3 {
+    margin-bottom: 8px;
+}
+.single-doctor-item .text-holder p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+.doctor-schedules {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.doctor-schedules p {
+    margin-bottom: 0.5rem;
+}
+.doctor-schedules p:first-child {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.doctor-schedules select {
+    margin-bottom: 0.5rem;
+    margin-top: -2px;
+}
+.doctor-schedules ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+.doctor-schedules ul > li {
+    list-style: none;
+    width: 22%; /* Mỗi mục chiếm 25% chiều rộng của container (1/4) */
+    box-sizing: border-box; /* Đảm bảo padding và border không làm thay đổi kích thước */
+    padding: 5px; /* Điều chỉnh khoảng cách giữa các mục */
+    cursor: pointer;
+}
+
+.doctor-schedules ul > li > a {
+    display: block;
+    text-decoration: none;
+    background-color: #f2f2f2;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+    color: #333!important;
+    font-weight: 500;
+    font-size: 14px;
+}
+.doctor-schedules ul > li > a:hover {
+    border: 1px solid #045df8;
+}
+.doctor-schedules span {
+    font-size: 12px;
+    color: #333;
+}
+.doctor-schedules svg {
+    margin-bottom: -4px;
+}
+.clinic h6 {
+    font-weight: 700;
+    margin-top: 0.75rem;
+}
+.clinic .clinic-intro {
+    margin-top: 0.75rem;
+}
+.clinic p {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #333!important;
+}
+/*.clinic p:last-child {
+    border-bottom: 1px solid #909090;
+}*/
+.clinic p:first-child {
+    font-weight: 500;
+}
+.clinic .price {
+    margin-top: 1rem;
+    color: #333;
+}
+section.detail-content {
+    margin-top: 1rem;
+    border-top: 1px solid rgb(204 204 204);
+    background-color: rgb(249 249 249);
+}
+section.detail-content .container {
+    margin-top: 1rem;
+}
+.detail-doctor_footer h2 {
+    font-size: 18px;
+}
+.detail-doctor_footer ul {
+    margin-bottom: 0.75rem;
+    margin-left: 2rem;
+}
+.detail-doctor_footer ul > li {
+    font-size: 14px;
+    list-style: disc;
+    color: #333 !important;
+}

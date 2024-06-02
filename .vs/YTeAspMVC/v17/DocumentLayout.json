@@ -1,0 +1,309 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Do_An\\YTeAspMVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A01FEAA5-1B5F-48C3-A579-6335E9A0D878}|YTeAspMVC\\Website.csproj|e:\\do_an\\yteaspmvc\\yteaspmvc\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A01FEAA5-1B5F-48C3-A579-6335E9A0D878}|YTeAspMVC\\Website.csproj|solutionrelative:yteaspmvc\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A01FEAA5-1B5F-48C3-A579-6335E9A0D878}|YTeAspMVC\\Website.csproj|E:\\Do_An\\YTeAspMVC\\yteaspmvc\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A01FEAA5-1B5F-48C3-A579-6335E9A0D878}|YTeAspMVC\\Website.csproj|solutionrelative:yteaspmvc\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A01FEAA5-1B5F-48C3-A579-6335E9A0D878}|YTeAspMVC\\Website.csproj|e:\\do_an\\yteaspmvc\\yteaspmvc\\views\\doctor\\index2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A01FEAA5-1B5F-48C3-A579-6335E9A0D878}|YTeAspMVC\\Website.csproj|solutionrelative:yteaspmvc\\views\\doctor\\index2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A01FEAA5-1B5F-48C3-A579-6335E9A0D878}|YTeAspMVC\\Website.csproj|E:\\Do_An\\YTeAspMVC\\yteaspmvc\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A01FEAA5-1B5F-48C3-A579-6335E9A0D878}|YTeAspMVC\\Website.csproj|solutionrelative:yteaspmvc\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A01FEAA5-1B5F-48C3-A579-6335E9A0D878}|YTeAspMVC\\Website.csproj|E:\\Do_An\\YTeAspMVC\\yteaspmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A01FEAA5-1B5F-48C3-A579-6335E9A0D878}|YTeAspMVC\\Website.csproj|solutionrelative:yteaspmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A01FEAA5-1B5F-48C3-A579-6335E9A0D878}|YTeAspMVC\\Website.csproj|E:\\Do_An\\YTeAspMVC\\yteaspmvc\\views\\doctor\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A01FEAA5-1B5F-48C3-A579-6335E9A0D878}|YTeAspMVC\\Website.csproj|solutionrelative:yteaspmvc\\views\\doctor\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A01FEAA5-1B5F-48C3-A579-6335E9A0D878}|YTeAspMVC\\Website.csproj|E:\\Do_An\\YTeAspMVC\\yteaspmvc\\views\\specialist\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A01FEAA5-1B5F-48C3-A579-6335E9A0D878}|YTeAspMVC\\Website.csproj|solutionrelative:yteaspmvc\\views\\specialist\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A01FEAA5-1B5F-48C3-A579-6335E9A0D878}|YTeAspMVC\\Website.csproj|E:\\Do_An\\YTeAspMVC\\yteaspmvc\\controllers\\specialistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A01FEAA5-1B5F-48C3-A579-6335E9A0D878}|YTeAspMVC\\Website.csproj|solutionrelative:yteaspmvc\\controllers\\specialistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A01FEAA5-1B5F-48C3-A579-6335E9A0D878}|YTeAspMVC\\Website.csproj|E:\\Do_An\\YTeAspMVC\\yteaspmvc\\daos\\doctordao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A01FEAA5-1B5F-48C3-A579-6335E9A0D878}|YTeAspMVC\\Website.csproj|solutionrelative:yteaspmvc\\daos\\doctordao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A01FEAA5-1B5F-48C3-A579-6335E9A0D878}|YTeAspMVC\\Website.csproj|E:\\Do_An\\YTeAspMVC\\yteaspmvc\\views\\specialist\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A01FEAA5-1B5F-48C3-A579-6335E9A0D878}|YTeAspMVC\\Website.csproj|solutionrelative:yteaspmvc\\views\\specialist\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A01FEAA5-1B5F-48C3-A579-6335E9A0D878}|YTeAspMVC\\Website.csproj|E:\\Do_An\\YTeAspMVC\\yteaspmvc\\daos\\specialistdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A01FEAA5-1B5F-48C3-A579-6335E9A0D878}|YTeAspMVC\\Website.csproj|solutionrelative:yteaspmvc\\daos\\specialistdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A01FEAA5-1B5F-48C3-A579-6335E9A0D878}|YTeAspMVC\\Website.csproj|E:\\Do_An\\YTeAspMVC\\yteaspmvc\\models\\clinic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A01FEAA5-1B5F-48C3-A579-6335E9A0D878}|YTeAspMVC\\Website.csproj|solutionrelative:yteaspmvc\\models\\clinic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A01FEAA5-1B5F-48C3-A579-6335E9A0D878}|YTeAspMVC\\Website.csproj|E:\\Do_An\\YTeAspMVC\\yteaspmvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A01FEAA5-1B5F-48C3-A579-6335E9A0D878}|YTeAspMVC\\Website.csproj|solutionrelative:yteaspmvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A01FEAA5-1B5F-48C3-A579-6335E9A0D878}|YTeAspMVC\\Website.csproj|E:\\Do_An\\YTeAspMVC\\yteaspmvc\\controllers\\cliniccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A01FEAA5-1B5F-48C3-A579-6335E9A0D878}|YTeAspMVC\\Website.csproj|solutionrelative:yteaspmvc\\controllers\\cliniccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1354156289:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Web.config",
+              "DocumentMoniker": "E:\\Do_An\\YTeAspMVC\\YTeAspMVC\\Web.config",
+              "RelativeDocumentMoniker": "YTeAspMVC\\Web.config",
+              "ToolTip": "E:\\Do_An\\YTeAspMVC\\YTeAspMVC\\Web.config",
+              "RelativeToolTip": "YTeAspMVC\\Web.config",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAACAQAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-06-01T18:07:47.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DoctorController.cs",
+              "DocumentMoniker": "E:\\Do_An\\YTeAspMVC\\YTeAspMVC\\Controllers\\DoctorController.cs",
+              "RelativeDocumentMoniker": "YTeAspMVC\\Controllers\\DoctorController.cs",
+              "ToolTip": "E:\\Do_An\\YTeAspMVC\\YTeAspMVC\\Controllers\\DoctorController.cs",
+              "RelativeToolTip": "YTeAspMVC\\Controllers\\DoctorController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T08:41:39.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\Do_An\\YTeAspMVC\\YTeAspMVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "YTeAspMVC\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\Do_An\\YTeAspMVC\\YTeAspMVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "YTeAspMVC\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACIAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-31T08:38:23.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "E:\\Do_An\\YTeAspMVC\\YTeAspMVC\\Models\\Doctor.cs",
+              "RelativeDocumentMoniker": "YTeAspMVC\\Models\\Doctor.cs",
+              "ToolTip": "E:\\Do_An\\YTeAspMVC\\YTeAspMVC\\Models\\Doctor.cs",
+              "RelativeToolTip": "YTeAspMVC\\Models\\Doctor.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAgwCAAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T07:47:19.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Do_An\\YTeAspMVC\\YTeAspMVC\\Views\\Specialist\\Index.cshtml",
+              "RelativeDocumentMoniker": "YTeAspMVC\\Views\\Specialist\\Index.cshtml",
+              "ToolTip": "E:\\Do_An\\YTeAspMVC\\YTeAspMVC\\Views\\Specialist\\Index.cshtml",
+              "RelativeToolTip": "YTeAspMVC\\Views\\Specialist\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-31T03:56:23.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "E:\\Do_An\\YTeAspMVC\\YTeAspMVC\\Views\\Doctor\\Detail.cshtml",
+              "RelativeDocumentMoniker": "YTeAspMVC\\Views\\Doctor\\Detail.cshtml",
+              "ToolTip": "E:\\Do_An\\YTeAspMVC\\YTeAspMVC\\Views\\Doctor\\Detail.cshtml",
+              "RelativeToolTip": "YTeAspMVC\\Views\\Doctor\\Detail.cshtml",
+              "ViewState": "AQIAACwAAAAAAAAAAADwvz0AAABnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-31T03:25:56.132Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SpecialistController.cs",
+              "DocumentMoniker": "E:\\Do_An\\YTeAspMVC\\YTeAspMVC\\Controllers\\SpecialistController.cs",
+              "RelativeDocumentMoniker": "YTeAspMVC\\Controllers\\SpecialistController.cs",
+              "ToolTip": "E:\\Do_An\\YTeAspMVC\\YTeAspMVC\\Controllers\\SpecialistController.cs",
+              "RelativeToolTip": "YTeAspMVC\\Controllers\\SpecialistController.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwCIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T03:09:13.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DoctorDao.cs",
+              "DocumentMoniker": "E:\\Do_An\\YTeAspMVC\\YTeAspMVC\\Daos\\DoctorDao.cs",
+              "RelativeDocumentMoniker": "YTeAspMVC\\Daos\\DoctorDao.cs",
+              "ToolTip": "E:\\Do_An\\YTeAspMVC\\YTeAspMVC\\Daos\\DoctorDao.cs",
+              "RelativeToolTip": "YTeAspMVC\\Daos\\DoctorDao.cs",
+              "ViewState": "AQIAAHwAAAAAAAAAAAAcwIkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T03:13:08.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index2.cshtml",
+              "DocumentMoniker": "E:\\Do_An\\YTeAspMVC\\YTeAspMVC\\Views\\Doctor\\Index2.cshtml",
+              "RelativeDocumentMoniker": "YTeAspMVC\\Views\\Doctor\\Index2.cshtml",
+              "ToolTip": "E:\\Do_An\\YTeAspMVC\\YTeAspMVC\\Views\\Doctor\\Index2.cshtml",
+              "RelativeToolTip": "YTeAspMVC\\Views\\Doctor\\Index2.cshtml",
+              "ViewState": "AQIAAHsAAAAAAAAAAADgv3AAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-30T08:33:53.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SpecialistDao.cs",
+              "DocumentMoniker": "E:\\Do_An\\YTeAspMVC\\YTeAspMVC\\Daos\\SpecialistDao.cs",
+              "RelativeDocumentMoniker": "YTeAspMVC\\Daos\\SpecialistDao.cs",
+              "ToolTip": "E:\\Do_An\\YTeAspMVC\\YTeAspMVC\\Daos\\SpecialistDao.cs",
+              "RelativeToolTip": "YTeAspMVC\\Daos\\SpecialistDao.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAkwCYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T03:11:47.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "E:\\Do_An\\YTeAspMVC\\YTeAspMVC\\Views\\Specialist\\Detail.cshtml",
+              "RelativeDocumentMoniker": "YTeAspMVC\\Views\\Specialist\\Detail.cshtml",
+              "ToolTip": "E:\\Do_An\\YTeAspMVC\\YTeAspMVC\\Views\\Specialist\\Detail.cshtml",
+              "RelativeToolTip": "YTeAspMVC\\Views\\Specialist\\Detail.cshtml",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAE8AAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-31T02:56:33.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Clinic.cs",
+              "DocumentMoniker": "E:\\Do_An\\YTeAspMVC\\YTeAspMVC\\Models\\Clinic.cs",
+              "RelativeDocumentMoniker": "YTeAspMVC\\Models\\Clinic.cs",
+              "ToolTip": "E:\\Do_An\\YTeAspMVC\\YTeAspMVC\\Models\\Clinic.cs",
+              "RelativeToolTip": "YTeAspMVC\\Models\\Clinic.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T08:20:10.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ClinicController.cs",
+              "DocumentMoniker": "E:\\Do_An\\YTeAspMVC\\YTeAspMVC\\Controllers\\ClinicController.cs",
+              "RelativeDocumentMoniker": "YTeAspMVC\\Controllers\\ClinicController.cs",
+              "ToolTip": "E:\\Do_An\\YTeAspMVC\\YTeAspMVC\\Controllers\\ClinicController.cs",
+              "RelativeToolTip": "YTeAspMVC\\Controllers\\ClinicController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T07:45:50.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\Do_An\\YTeAspMVC\\YTeAspMVC\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "YTeAspMVC\\Controllers\\HomeController.cs",
+              "ToolTip": "E:\\Do_An\\YTeAspMVC\\YTeAspMVC\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "YTeAspMVC\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T16:57:26.594Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1796,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
